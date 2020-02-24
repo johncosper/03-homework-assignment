@@ -13,6 +13,19 @@ btn.addEventListener("click", function() {
         else {
             alert("Great we will make your password " + pwlength + " characters long!")
         }
+        while (pwlength < 8) {
+            var pwlength = prompt("How long would you like your Password?", "between 8-128 characters");
+        }
     
+    var spechar = confirm("Would you like to include special characters in your password?");
+
+        if (spechar == true) {
+            alert("Okay! We'll include special characters!")
+        }
+        else {
+            alert("Okay! We won't include any special characters!")
+        }
+
+        
 });
 
