@@ -23,7 +23,7 @@ submit.addEventListener("click",function(){
 });
 
 function password(l,characters){
-		var pwd = '';
+		var pwd = "";
     for(var i = 0; i<l; i++){
     		pwd += characters.charAt(Math.floor(Math.random() * characters.length));
     }
