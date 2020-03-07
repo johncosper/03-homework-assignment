@@ -1,11 +1,11 @@
-h1 {
+#password-container {
+    justify-content: center;
+    margin-top: 125px;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 25px;
     text-align: center;
-}
-
-.col {
-    border: solid;
-    margin-top: 35px;
-    margin-right: 70px;
-    margin-left: 70px;
-    padding: 70px;
+    font-size: large;
+    border: solid black 1px;
+    
 }

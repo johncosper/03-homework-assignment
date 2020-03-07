@@ -1,37 +1,33 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Prompt Password Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
 
-    <head>
-        <title>Password Generator 9000</title>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css">
-    </head>
+</head>
 
-    <body>
+<body>
+    
+    <div id='password-container' class="card">
 
-        <h1>Password Generator 9000!</h1>
-
-        <div class="row">
-
-            <div class="col">
-
-                How many characters long would you like your password? <input type="number" id="pwLength" value="8" min="8" max="128"><br>
-                <br>
-                Check this box if you want to include numbers: <input type="checkbox" id="numbers"><br>
-                <br>
-                Check this box if you want to include symbols: <input type="checkbox" id="symbols"><br>
-                <br>
-                Check this box if you want to include uppercase: <input type="checkbox" id="uprCase"><br>
-                <br>
-                <button id="submit">Generate New Password!</button><br>
-                <br>
-                Your New Password: <input type="text" id="yourPw" size="110">
-
-            </div>
-
+        <div class="card-header">
+          Generated Password
         </div>
 
-        <script src="./script.js"></script>
-    </body>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p id="newPassword">sample text</p>
+          </blockquote>
+        </div>
 
+      </div>
+
+      <script src="script.js"></script>
+
+</body>
 </html>

@@ -1,31 +1,15 @@
-var char = "abcdefghijklmnopqrstuvwxyz";
-var upr = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var num = "0123456789";
-var sym = "!@#$%^&*()_+";
+alert('Welcome to the Password Generator 9000!');
+alert('Answer these prompts to select the criteria for your new password!');
 
-var charNum = document.getElementById("pwLength");
-var numBox = document.getElementById("numbers");
-var symBox = document.getElementById("symbols");
-var uprBox = document.getElementById("uprCase");
-var submit = document.getElementById("submit");
-var yourPw = document.getElementById("yourPw");
+var lengthCase = prompt('How long would you like your password? (8 - 128)');
+var uprCase = prompt('Would you like to include uppercase letters? (yes or no)');
+var specCase = prompt('Would you like to include special characters? (yes or no)');
+var numCase = prompt('Would you like to include numbers? (yes or no)');
 
-alert("Hello and welcome to the Random Password Generator 9000!");
-    
-alert("Please answer the following questions to set the criteria for your new password!");
+let passwordLength = lengthCase.value;
+let values = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+';
+let genPassword = '';
 
-submit.addEventListener("click",function(){
-    var characters = char;
-    (numBox.checked) ? characters += num : "";
-    (symBox.checked) ? characters += sym : "";
-    (uprBox.checked) ? characters += upr : "";
-    yourPw.value = password(charNum.value, characters);
-});
-
-function password(l,characters){
-		var pwd = "";
-    for(var i = 0; i<l; i++){
-    		pwd += characters.charAt(Math.floor(Math.random() * characters.length));
-    }
-    return pwd;
+for(var i = 0; i <= passwordLength; i++) {
+    genPassword = genPassword + values.charAt(Math.floor(Math.random() * Math.floor(value.length - 1)));
 }
